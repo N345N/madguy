@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(to right, #C6978E, #D7B7A3, #C6978E);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   }
+   .header {
+    background-color: #696868;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo span {
+    color: #f73471;
+}
+   #form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+   }
+   
+   #form h1 {
+    padding: 15px;   
+    margin-bottom: 30px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+   }
+   
+   #form label {
+    display: block;
+    margin-bottom: 10px;
+   }
+
+   #form .column {
+       float: left;
+       width: 50%;
+   }
+
+   .form .column:after{
+       content: "";
+       display: table;
+       clear: both;
+   }
+
+   #form label {
+    font-family: sans-serif;
+    padding-right: 125px;
+   }
+   
+   #form input[type="text"], 
+   #form input[type="password"], 
+   #form input[type="email"], 
+   #form input[type="number"] {   
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border: 2px solid #cccccc;
+    outline: none;
+    border-radius: 3px;
+   }
+   
+   #form button {
+    background-color: #BE7A4A;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   
+   #form button:hover {
+    background-color: #BE7A50;
+   }
+   .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+ }
+ 
+ .button-container {
+    margin-top: 20px;
+ }
+ 

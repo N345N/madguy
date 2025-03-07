@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+}
+
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.box h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Email input box styling */
+.box input[type="email"], 
+.password-container input[type="password"],
+.password-container input[type="text"] {
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: calc(100% - 50px); /* Ensure the width is the same and leaves space for the icon */
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+/* Stretch on focus */
+.box input[type="email"]:focus,
+.password-container input[type="password"]:focus,
+.password-container input[type="text"]:focus {
+  width: calc(100% - 30px); /* Slightly bigger on focus */
+  border-color: #2ecc71;
+}
+
+/* Password container to keep the icon inside and consistent */
+.password-container {
+  position: relative;
+  width: 100%;
+  margin: 10px auto;
+}
+
+/* Styling the eye icon */
+.toggle-password-icon {
+  position: absolute;
+  right: 25px; /* Adjust based on padding and width */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #2ecc71; /* Green color for the eye icon */
+}
+
+/* Submit button styling */
+.box input[type="submit"] {
+  border: 2px solid #2ecc71;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px 40px;
+  width: 70%;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.box input[type="submit"]:hover {
+  background: #2ecc71;
+}
+
+/* Sign Up link styling */
+.href {
+  display: block;
+  margin: 20px auto;
+  color: #2ecc71;
+  font-size: 15px;
+  text-decoration: none;
+  border: 2px solid #2ecc71;
+  padding: 14px 10px;
+  width: 75%;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.href:hover {
+  background: #2ecc71;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: #9b59b6;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
